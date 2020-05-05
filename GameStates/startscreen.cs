@@ -18,8 +18,8 @@ namespace DonkeyKong.GameStates
 
             this.Add(new SpriteGameObject("startscreen_spr"));
             DonkeyKongBigDick = new TextGameObject("gamefont");
-            DonkeyKongBigDick.Text = "eat shit nigga";
-            DonkeyKongBigDick.Position = new Vector2(175, 250);
+            DonkeyKongBigDick.Text = "Press SPACE to play \n Reach the top!";
+            DonkeyKongBigDick.Position = new Vector2(140, 265);
             this.Add(DonkeyKongBigDick);
 
         }

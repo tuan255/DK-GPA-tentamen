@@ -18,8 +18,8 @@ namespace DonkeyKong.GameStates
 
             this.Add(new SpriteGameObject("endscreen_spr"));
             DonkeyKongBigDick = new TextGameObject("gamefont");
-            DonkeyKongBigDick.Text = "you ded nigga \n Score: "+ DonkeyKong.self.score;
-            DonkeyKongBigDick.Position = new Vector2(175, 250);
+            DonkeyKongBigDick.Text = "you ded bro \n(SPACE to restart) \nScore: "+ DonkeyKong.self.score;
+            DonkeyKongBigDick.Position = new Vector2(175, 200);
             this.Add(DonkeyKongBigDick);
 
         }
@@ -42,7 +42,7 @@ namespace DonkeyKong.GameStates
 
         public override void Update(GameTime gameTime)
         {
-            DonkeyKongBigDick.Text = "you ded nigga \n Score: " + DonkeyKong.self.score;
+            DonkeyKongBigDick.Text = "you ded bro \n(SPACE to restart) \nScore: " + DonkeyKong.self.score;
         }
     }
 }
