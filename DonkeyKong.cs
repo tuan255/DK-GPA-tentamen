@@ -5,9 +5,7 @@ using Microsoft.Xna.Framework.Input;
 
 namespace DonkeyKong
 {
-    /// <summary>
-    /// This is the main type for your game.
-    /// </summary>
+   
     public class DonkeyKong : GameEnvironment
     {
         /// <summary>
