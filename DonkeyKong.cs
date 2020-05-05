@@ -14,16 +14,21 @@ namespace DonkeyKong
         /// LoadContent will be called once per game and is the place to load
         /// all of your content.
         /// </summary>
+        public static DonkeyKong self;
+        public float score = 0;
         protected override void LoadContent()
         {
+            self = this;
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
             screen = new Point(750, 600);
             ApplyResolutionSettings();
 
             // TODO: use this.Content to load your game content here
+            GameStateManager.AddGameState("StartScreen", new StartScreen());
             GameStateManager.AddGameState("PlayingState", new PlayingState());
-            GameStateManager.SwitchTo("PlayingState");
+            GameStateManager.AddGameState("Endscreen", new Endscreen());
+            GameStateManager.SwitchTo("StartScreen");
         }
         
     }

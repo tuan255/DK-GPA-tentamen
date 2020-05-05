@@ -10,11 +10,13 @@ namespace DonkeyKong.GameObjects
 {
     class Bridge : SpriteGameObject
     {
-        protected Vector2 startPosition = new Vector2(50, 550);
-        public Bridge() : base("bridge_spr")
+
+        public static bool Collision = true;
+        public Bridge(Vector2 startPosition, String Assetname,bool collision) : base(Assetname)
         {
+            Collision = collision;
             position = startPosition;
-            origin = Center;
+
         }
 
     }

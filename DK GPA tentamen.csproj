@@ -41,6 +41,7 @@
     <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="GameObjects\Boss.cs" />
     <Compile Include="DonkeyKong.cs" />
     <Compile Include="GameManagement\AnimatedGameObject.cs" />
     <Compile Include="GameManagement\Animation.cs" />
@@ -62,6 +63,8 @@
     <Compile Include="GameObjects\Bridge1.cs" />
     <Compile Include="GameObjects\Bullet.cs" />
     <Compile Include="GameObjects\Player.cs" />
+    <Compile Include="GameStates\Endscreen.cs" />
+    <Compile Include="GameStates\StartScreen.cs" />
     <Compile Include="GameStates\PlayingState.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
